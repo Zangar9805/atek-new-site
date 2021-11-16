@@ -9,6 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Подключаем CSS слайдера -->
+    <link rel="stylesheet" href="assets/css/slider.css">
+
+    <!-- Подключаем JS слайдера -->
+    <script defer src="assets/js/slider.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>ATEKPS</title>
@@ -20,16 +26,16 @@
             <div class="container">
                 <div class="header__top__inner">
                     <a href="#" class="header__top__link">
-                        г.Алматы мкр. Жетысу-1, дом 32/3
+                        <img class="header__top__icon" src="assets/img/icons/pin.png" alt="icon"> г.Алматы мкр. Жетысу-1, дом 32/3
                     </a>
                     <a href="mailto:atek_ps@mail.ru" class="header__top__link">
-                        <span></span> atek_ps@mail.ru
+                        <img class="header__top__icon" src="assets/img/icons/email.png" alt="icon"> atek_ps@mail.ru
                     </a>
                     <a href="tel:+77273767478" class="header__top__link">
-                        <span></span> +7 (727) 376-74-78 (вн-555)
+                        <img class="header__top__icon" src="assets/img/icons/phone.png" alt="icon"> +7 (727) 376-74-78 (вн-555)
                     </a>
                     <a href="#" class="header__top__link">
-                        <span></span> РУС
+                        РУС <img class="header__top__icon__lang" src="assets/img/icons/more-lang.png" alt="Phone icon">
                     </a>
                 </div>
             </div>
@@ -42,57 +48,87 @@
                             <img src="assets/img/logorus.png" alt="" width="60px" height="60px">
                         </a>
                         <a href="#" class="site-name">
-                            АЛМАТИНСКИЙ ТЕХНИКО-ЭКОНОМИЧЕСКИЙ КОЛЛЕДЖ ПУТЕЙ СООБЩЕНИЯ 
+                            АЛМАТИНСКИЙ ТЕХНИКО-ЭКОНОМИЧЕСКИЙ КОЛЛЕДЖ ПУТЕЙ СООБЩЕНия 
                         </a>
                     </div>
                     <div class="header__nav">
                         <div class="dropdown">
                             <p class="dropdown__title">О колледже</p>
-                            <div class="dropdown__child">
-                                <a class="dropdown__link" href="#">gfdgfd</a>
-                                <a class="dropdown__link" href="#">fdgf</a>
-                                <a class="dropdown__link" href="#">fdgf</a>
-                            </div>
+                            <ul class="dropdown__child">
+                                <li><a href="#" class="dropdown__link">Миссия и видение</a></li>
+                                <li><a href="#" class="dropdown__link">История</a></li>
+                                <li><a href="#" class="dropdown__link">Достижения
+                                    колледжа</a></li>
+                                <li><a href="#" class="dropdown__link">Достижение
+                                    преподавателей</a></li>
+                                <li><a href="#" class="dropdown__link">Достижение
+                                    студентов</a></li>
+                                <li><a href="#" class="dropdown__link">Лицензии</a></li>
+                                <li><a href="#" class="dropdown__link">Гос.услуги</a></li>
+                                <li><a href="#" class="dropdown__link">Контакты</a></li>
+                                <li><a href="#" class="dropdown__link">Антикоррупционный
+                                    стандарт</a></li>
+                            </ul>
                         </div>
                         <div class="dropdown">
                             <p class="dropdown__title">Абитуриентам</p>
-                            <div class="dropdown__child">
-                                <a href="#"></a>
-                                <a href="#"></a>
-                                <a href="#"></a>
-                            </div>
+                            <ul class="dropdown__child">
+                                <li><a href="#" class="dropdown__link">Миссия и видение</a></li>
+                                <li><a href="#" class="dropdown__link">История</a></li>
+                                <li><a href="#" class="dropdown__link">Достижения
+                                    колледжа</a></li>
+                                <li><a href="#" class="dropdown__link">Достижение
+                                    преподавателей</a></li>
+                                <li><a href="#" class="dropdown__link">Достижение
+                                    студентов</a></li>
+                                <li><a href="#" class="dropdown__link">Лицензии</a></li>
+                                <li><a href="#" class="dropdown__link">Гос.услуги</a></li>
+                                <li><a href="#" class="dropdown__link">Контакты</a></li>
+                                <li><a href="#" class="dropdown__link">Антикоррупционный
+                                    стандарт</a></li>
+                            </ul>
                         </div>
                         <div class="dropdown">
                             <p class="dropdown__title">Персонал</p>
-                            <div class="dropdown__child">
-                                <a href="#"></a>
-                                <a href="#"></a>
-                                <a href="#"></a>
-                            </div>
+                            <ul class="dropdown__child">
+                                <li><a href="#" class="dropdown__link">Миссия и видение</a></li>
+                                <li><a href="#" class="dropdown__link">История</a></li>
+                                <li><a href="#" class="dropdown__link">Достижения
+                                    колледжа</a></li>
+                                <li><a href="#" class="dropdown__link">Достижение
+                                    преподавателей</a></li>
+                                <li><a href="#" class="dropdown__link">Достижение
+                                    студентов</a></li>
+                                <li><a href="#" class="dropdown__link">Лицензии</a></li>
+                                <li><a href="#" class="dropdown__link">Гос.услуги</a></li>
+                                <li><a href="#" class="dropdown__link">Контакты</a></li>
+                                <li><a href="#" class="dropdown__link">Антикоррупционный
+                                    стандарт</a></li>
+                            </ul>
                         </div>
                         <div class="dropdown">
                             <p class="dropdown__title">Обучающимся</p>
-                            <div class="dropdown__child">
-                                <a href="#"></a>
-                                <a href="#"></a>
-                                <a href="#"></a>
-                            </div>
+                            <ul class="dropdown__child">
+                                <li><a href="#" class="dropdown__link">Миссия и видение</a></li>
+                                <li><a href="#" class="dropdown__link">История</a></li>
+                                <li><a href="#" class="dropdown__link">Достижения
+                                    колледжа</a></li>
+                                <li><a href="#" class="dropdown__link">Достижение
+                                    преподавателей</a></li>
+                                <li><a href="#" class="dropdown__link">Достижение
+                                    студентов</a></li>
+                                <li><a href="#" class="dropdown__link">Лицензии</a></li>
+                                <li><a href="#" class="dropdown__link">Гос.услуги</a></li>
+                                <li><a href="#" class="dropdown__link">Контакты</a></li>
+                                <li><a href="#" class="dropdown__link">Антикоррупционный
+                                    стандарт</a></li>
+                            </ul>
                         </div>
                         <div class="dropdown">
                             <p class="dropdown__title">Блог Директора</p>
-                            <div class="dropdown__child">
-                                <a href="#"></a>
-                                <a href="#"></a>
-                                <a href="#"></a>
-                            </div>
                         </div>
                         <div class="dropdown">
                             <p class="dropdown__title">ДОТ</p>
-                            <div class="dropdown__child">
-                                <a href="#"></a>
-                                <a href="#"></a>
-                                <a href="#"></a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -100,8 +136,25 @@
         </div>
     </header>
 
-    <div class="slider">
-        <img src="assets/img/slide/slide1.jpg" alt="slider">
+    <div id="slider1" class="slider">
+        <div class="slider__wrapper">
+          <div class="slider__items">
+            <div class="slider__item">
+                <img src="assets/img/slide/slide1.jpg" alt="slider">
+            </div>
+            <div class="slider__item">
+                <img src="assets/img/slide/slide2.jpg" alt="slider">
+            </div>
+            <div class="slider__item">
+                <img src="assets/img/slide/slide3.jpg" alt="slider">
+            </div>
+            <div class="slider__item">
+                <img src="assets/img/slide/slide4.jpg" alt="slider">
+            </div>
+          </div>
+        </div>
+        <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
+        <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
     </div>
 
     <div class="subdivisions p70">
@@ -167,12 +220,14 @@
                     <p class="welcome-block__text">
                         Мы рады Вас приветствовать на странице официального сайта ТОО "Алматинский технико-экономический колледж путей сообщения".
                         <br /> <br /> Основная цель создания Колледжа – профессионально подготовить молодежь к происходящим в настоящее время изменениям, дать возможность молодым людям получить современное, качественное образование по востребованным специальностям...
-                        <!--В ТОО «АТЭКПС» созданы все оптимальные условия для максимально эффективного, удобного и увлекательного образовательного процесса: современная материально-техническая база, высококвалифицированный профессорско-преподавательский
+                    </p>
+                    <div id="txt-hide" class="welcome-block__text">
+                        В ТОО «АТЭКПС» созданы все оптимальные условия для максимально эффективного, удобного и увлекательного образовательного процесса: современная материально-техническая база, высококвалифицированный профессорско-преподавательский
                         состав (среди которых кандидаты наук и доценты), тщательно выверенный подход к организации учебного процесса - все это позволяет Колледжу быть востребованным на рынке образовательных услуг и дать все необходимое своим студентам.
                         <br /> <br /> Наш сайт предназначен широкому кругу общественности, адресован как студентам, так и заинтересованным родителям. Мы с удовольствием расскажем Вам, чем живет наш колледж, порадуем нашими достижениями и победами. Надеемся,
-                        что здесь Вы найдете интересную и полезную информацию и убедитесь в качественной работе нашего персонала.-->
-                    </p>
-                    <button class="welcome-block__more">Читать далее</button>
+                        что здесь Вы найдете интересную и полезную информацию и убедитесь в качественной работе нашего персонала.
+                    </div>
+                    <button onclick="toggleTxt()" id="hide-btn" class="welcome-block__more">Читать далее</button>
                 </div>
                 <div class="welcome-block__video">
                     <img src="assets/img/welcome-blank.jpg" width="570px" alt="Welcome Video">
@@ -403,12 +458,30 @@
             <h3 class="block-title">
                 Наши партнеры
             </h3>
-            <div class="partners">
-                <img src="assets/img/partners/railway.png" alt="Partners Icon" class="partners__img">
-                <img src="assets/img/partners/nur-otan.png" alt="Partners Icon" class="partners__img">
-                <img src="assets/img/partners/almaty.png" alt="Partners Icon" class="partners__img">
-                <img src="assets/img/partners/fortebank.png" alt="Partners Icon" class="partners__img">
+            <div id="slider2" class="slider">
+                <div class="slider__wrapper">
+                    <div class="slider__items">
+                        <div class="slider__item">
+                            <div class="partners">
+                                <a href="https://nurotan.kz/?lang=kz" target="_blank"><img src="assets/img/partners/nur-otan.png" alt="Partners Icon" class="partners__img"></a>
+                                <a href="https://www.railways.kz/" target="_blank"><img src="assets/img/partners/railway.png" alt="Partners Icon" class="partners__img"></a>
+                                <a href="https://almaty.gov.kz/page.php?page_id=4195" target="_blank"><img src="assets/img/partners/almaty.png" alt="Partners Icon" class="partners__img"></a>
+                                <a href="https://forte.kz/" target="_blank"><img src="assets/img/partners/fortebank.png" alt="Partners Icon" class="partners__img"></a>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="partners">
+                                <a href="https://www.gov.kz/memleket/entities/almaty-auezov?lang=kk" target="_blank"><img src="assets/img/partners/auezovlogo.gif" alt="Partners Icon" class="partners__img"></a>
+                                <a href="http://rmebrk.kz/" target="_blank"><img src="assets/img/partners/rmeblogo.png" alt="Partners Icon" class="partners__img"></a>
+                                <a href="https://www.gov.kz/memleket/entities/almaty-nauryzbai?lang=kk" target="_blank"><img src="assets/img/partners/nauryzbaylogo.gif" alt="Partners Icon" class="partners__img"></a>
+                                <a href="http://edunews.kz/ru/" target="_blank"><img src="assets/img/partners/edunewslogo.jpg" alt="Partners Icon" class="partners__img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+                
+            
         </div>
     </div>
     <!-- Our partners block end -->
@@ -417,7 +490,7 @@
         <div class="container">
             <div class="footer__inner">
                 <div class="footer__map">
-                    <img src="assets/img/map.jpg" alt="MAP">
+                    <a class="dg-widget-link" href="http://2gis.kz/almaty/firm/9429940001161212/center/76.84020817279817,43.22171355470532/zoom/18?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Алматы</a><div class="dg-widget-link"><a href="http://2gis.kz/almaty/center/76.840673,43.221706/zoom/18/routeTab/rsType/bus/to/76.840673,43.221706╎Алматинский технико-экономический колледж путей сообщения?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Алматинский технико-экономический колледж путей сообщения</a></div><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":570,"height":300,"borderColor":"#a3a3a3","pos":{"lat":43.22171355470532,"lon":76.84020817279817,"zoom":18},"opt":{"city":"almaty"},"org":[{"id":"9429940001161212"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
                 </div>
                 <div class="footer__infos">
                     <div class="footer__info">
@@ -425,7 +498,7 @@
                             Адрес:
                         </h3>
                         <p class="footer__info__text">
-                            г.Алматы мкр. Жетысу-1, дом 32/3
+                            г.Алматы, мкр. Жетысу-1, дом 32/3
                         </p>
                     </div>
                     <div class="footer__info">
@@ -460,9 +533,13 @@
                         <h3 class="footer__info__title">
                             Мы в соц. сетях:
                         </h3>
-                        <p class="footer__info__text">
-                            г.Алматы мкр. Жетысу-1, дом 32/3
-                        </p>
+                        <div class="footer__info__social">
+                            <a href=""><img src="assets/img/icons/vk.png" alt="Social Box" class="social__img"></a>
+                            <a href=""><img src="assets/img/icons/facebook.png" alt="Social Box" class="social__img"></a>
+                            <a href=""><img src="assets/img/icons/whatsapp.png" alt="Social Box" class="social__img"></a>
+                            <a href=""><img src="assets/img/icons/insta.png" alt="Social Box" class="social__img"></a>
+                            <a href=""><img src="assets/img/icons/youtube.png" alt="Social Box" class="social__img"></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -473,6 +550,8 @@
             ©2020 All rights reserved
         </p>
     </div>
+
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
