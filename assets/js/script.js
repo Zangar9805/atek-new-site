@@ -1,20 +1,20 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
     // инициализация слайдера
     new SimpleAdaptiveSlider('#slider1', {
-      loop: true,
-      autoplay: false,
-      interval: 5000,
-      swipe: true,
+        loop: true,
+        autoplay: false,
+        interval: 5000,
+        swipe: true,
     });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
     // инициализация слайдера
     new SimpleAdaptiveSlider('#slider2', {
-      loop: true,
-      autoplay: false,
-      interval: 5000,
-      swipe: true,
+        loop: true,
+        autoplay: false,
+        interval: 5000,
+        swipe: true,
     });
 });
 

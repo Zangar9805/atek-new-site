@@ -41,6 +41,7 @@ a {
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
+    text-align: center;
     color: #1A6782;
     background: none;
     border: 2px solid #1A6782;
@@ -105,6 +106,7 @@ header {
     align-items: center;
 }
 
+
 /* .logo {
     margin: 10px 10px 10px 0;
 } */
@@ -137,12 +139,12 @@ header {
     text-underline-offset: 5px;
 }
 
-.dropdown:hover > .dropdown__title {
+.dropdown:hover>.dropdown__title {
     color: #1A6782;
     text-decoration: underline;
 }
 
-.dropdown:hover > .dropdown__child {
+.dropdown:hover>.dropdown__child {
     display: block;
 }
 
@@ -531,8 +533,9 @@ footer {
 
 .footer__map {
     width: 570px;
-    height: 400px;
+    height: 300px;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .footer__map img {
