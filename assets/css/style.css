@@ -1,6 +1,7 @@
 * {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
+    font-weight: 400;
     line-height: 17px;
     color: #001821;
     box-sizing: border-box;
@@ -18,13 +19,33 @@ a {
     padding: 0 15px;
 }
 
-.p70 {
-    padding: 70px 0;
-}
-
-.pt70 {
-    padding-top: 70px;
-}
+section {
+    padding: 0 15px;
+  }
+  
+  @media (min-width: 575.98px){
+    section {
+      padding: 0 calc(50% - 270px);
+    }
+  }
+  
+  @media (min-width: 767.98px){
+    section {
+      padding: 0 calc(50% - 360px);
+    }
+  }
+  
+  @media (min-width: 991.98px) {
+    section {
+      padding: 0 calc(50% - 480px);
+    }
+  }
+  
+  @media (min-width: 1199.98px){
+    section {
+      padding: 0 calc(50% - 580px);
+    }
+  }
 
 .block-title {
     margin-bottom: 50px;
@@ -83,14 +104,11 @@ header {
 }
 
 .header__top {
-    width: 100%;
-    padding: 15px 0;
-    background-color: #1A6782;
-}
-
-.header__top__inner {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    background-color: #1A6782;
 }
 
 .header__top__link {
@@ -111,7 +129,7 @@ header {
     margin-left: 5px;
 }
 
-.header__body__inner {
+.header__body {
     display: flex;
     vertical-align: middle;
     align-items: center;
@@ -204,11 +222,9 @@ header {
 /*                  ---------- Subdivisions -----------                    */
 
 
-/* .subdivisions {
-
-} */
-
-.subdivisions__inner {
+.subdivisions {
+    padding-top: 70px;
+    padding-bottom: 70px;
     display: flex;
     justify-content: space-between;
 }
@@ -282,13 +298,12 @@ header {
 /*                  ---------- welcome block -----------                    */
 
 .welcome-block {
-    background-color: #EBF5F9;
-}
-
-.welcome-block__inner {
     display: flex;
     /* align-items: center; */
     justify-content: space-between;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #EBF5F9;
 }
 
 .welcome-block__desc {
@@ -359,6 +374,11 @@ header {
 /*                  ---------- Specialties -----------                    */
 
 .specialties {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.specialties__list {
     display: grid;
     grid-template-columns: repeat(3, 370px);
     grid-gap: 30px;
@@ -374,14 +394,13 @@ header {
 /*                  ---------- Principal blog -----------                    */
 
 .principal-blog {
-    background-color: #EBF5F9;
-}
-
-.principal-blog__inner {
+    padding-top: 70px;
+    padding-bottom: 70px;
     display: flex;
     align-items: center;
     vertical-align: middle;
     justify-content: space-between;
+    background-color: #EBF5F9;
 }
 
 .principal-blog__desc {
@@ -411,6 +430,8 @@ header {
 /*                  ---------- Benefits block -----------                    */
 
 .benefits {
+    padding-top: 70px;
+    padding-bottom: 70px;
     display: grid;
     grid-template-columns: repeat(3, 370px);
     grid-gap: 30px;
@@ -492,6 +513,11 @@ header {
 
 /*                  ---------- Feedback block -----------                    */
 
+.feedbacks {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
 .feedback {
     min-width: 100%;
     display: flex;
@@ -551,6 +577,10 @@ header {
 /*                  ---------- Partners block -----------                    */
 
 .partners {
+    padding-bottom: 70px;
+}
+
+.partners-slide {
     display: flex;
     justify-content: space-between;
 }
@@ -563,12 +593,10 @@ header {
 
 /*                  ---------- Footer -----------                    */
 
-footer {
+.footer {
     background: #001821;
-    padding: 65px 0 70px;
-}
-
-.footer__inner {
+    padding-top: 70px;
+    padding-bottom: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
