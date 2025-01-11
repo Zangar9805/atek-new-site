@@ -7,6 +7,7 @@
     <title>Главная страница | АТЭКПС</title>
     <link rel="stylesheet" href="assets/css/reset.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,600&display=swap" rel="stylesheet">
@@ -36,29 +37,140 @@
         <section class="header__body">
             <div class="header__logo">
                 <a href="#" class="logo">
-                    <img src="assets/img/logorus.png" alt="" width="60px" height="60px">
+                    <img src="assets/img/logorus.png" alt="">
                 </a>
                 <a href="#" class="site-name">
                     АЛМАТИНСКИЙ ТЕХНИКО-ЭКОНОМИЧЕСКИЙ КОЛЛЕДЖ ПУТЕЙ СООБЩЕНия 
                 </a>
             </div>
+            <div class="header__nav__burger">
+                <nav>
+                    <input type="checkbox" id="menu" name="menu" class="m-menu__checkbox">
+                    <label class="m-menu__toggle" for="menu">
+                    <i class="fa fa-bars m-menu-hamburger-icon"></i>
+                    </label>
+                    <label class="m-menu__overlay" for="menu"></label>
+                
+                    <div class="m-menu">
+                    <div class="m-menu__header">
+                        <label class="m-menu__toggle" for="menu">
+                        <i class="fa fa-times m-menu-header-icon"></i>
+                        </label>
+                        <span>Меню</span>
+                    </div>
+                    <ul>
+                        <li>
+                            <label class="a-label__chevron" for="item-2"><i class="fad fa-folder m-menu-icon"></i>О колледже</label>
+                            <input type="checkbox" id="item-2" name="item-2" class="m-menu__checkbox">
+                            <div class="m-menu">
+                                <div class="m-menu__header">
+                                    <label class="m-menu__toggle" for="item-2">
+                                        <i class="fas fa-chevron-left m-menu-header2-icon"></i>                
+                                    </label>
+                                    <span>О колледже</span>
+                                </div>
+                                <ul>
+                                    <li><label><a href="#">Миссия и видение</a></label></li>
+                                    <li><label><a href="#">История</a></label></li>
+                                    <li><label><a href="#">Достижения колледжа</a></label></li>
+                                    <li><label><a href="#">Достижение преподавателей</a></label></li>
+                                    <li><label><a href="#">Достижение студентов</a></label></li>
+                                    <li><label><a href="#">Лицензии</a></label></li>
+                                    <li><label><a href="#">Гос.услуги</a></label></li>
+                                    <li><label><a href="#">Контакты</a></label></li>
+                                    <li><label><a href="#">Антикоррупционный стандарт</a></label></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <label class="a-label__chevron" for="item-2"><i class="fad fa-folder m-menu-icon"></i>Абитуриентам</label>
+                            <input type="checkbox" id="item-2" name="item-2" class="m-menu__checkbox">
+                            <div class="m-menu">
+                                <div class="m-menu__header">
+                                    <label class="m-menu__toggle" for="item-2">
+                                        <i class="fas fa-chevron-left m-menu-header2-icon"></i>                
+                                    </label>
+                                    <span>Абитуриентам</span>
+                                </div>
+                                <ul>
+                                    <li><label><a href="#">Миссия и видение</a></label></li>
+                                    <li><label><a href="#">История</a></label></li>
+                                    <li><label><a href="#">Достижения колледжа</a></label></li>
+                                    <li><label><a href="#">Достижение преподавателей</a></label></li>
+                                    <li><label><a href="#">Достижение студентов</a></label></li>
+                                    <li><label><a href="#">Лицензии</a></label></li>
+                                    <li><label><a href="#">Гос.услуги</a></label></li>
+                                    <li><label><a href="#">Контакты</a></label></li>
+                                    <li><label><a href="#">Антикоррупционный стандарт</a></label></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <label class="a-label__chevron" for="item-2"><i class="fad fa-folder m-menu-icon"></i>Персонал</label>
+                            <input type="checkbox" id="item-2" name="item-2" class="m-menu__checkbox">
+                            <div class="m-menu">
+                                <div class="m-menu__header">
+                                    <label class="m-menu__toggle" for="item-2">
+                                        <i class="fas fa-chevron-left m-menu-header2-icon"></i>                
+                                    </label>
+                                    <span>Персонал</span>
+                                </div>
+                                <ul>
+                                    <li><label><a href="#">Миссия и видение</a></label></li>
+                                    <li><label><a href="#">История</a></label></li>
+                                    <li><label><a href="#">Достижения колледжа</a></label></li>
+                                    <li><label><a href="#">Достижение преподавателей</a></label></li>
+                                    <li><label><a href="#">Достижение студентов</a></label></li>
+                                    <li><label><a href="#">Лицензии</a></label></li>
+                                    <li><label><a href="#">Гос.услуги</a></label></li>
+                                    <li><label><a href="#">Контакты</a></label></li>
+                                    <li><label><a href="#">Антикоррупционный стандарт</a></label></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <label class="a-label__chevron" for="item-2"><i class="fad fa-folder m-menu-icon"></i>Обучающимся</label>
+                            <input type="checkbox" id="item-2" name="item-2" class="m-menu__checkbox">
+                            <div class="m-menu">
+                                <div class="m-menu__header">
+                                    <label class="m-menu__toggle" for="item-2">
+                                        <i class="fas fa-chevron-left m-menu-header2-icon"></i>                
+                                    </label>
+                                    <span>Обучающимся</span>
+                                </div>
+                                <ul>
+                                    <li><label><a href="#">Миссия и видение</a></label></li>
+                                    <li><label><a href="#">История</a></label></li>
+                                    <li><label><a href="#">Достижения колледжа</a></label></li>
+                                    <li><label><a href="#">Достижение преподавателей</a></label></li>
+                                    <li><label><a href="#">Достижение студентов</a></label></li>
+                                    <li><label><a href="#">Лицензии</a></label></li>
+                                    <li><label><a href="#">Гос.услуги</a></label></li>
+                                    <li><label><a href="#">Контакты</a></label></li>
+                                    <li><label><a href="#">Антикоррупционный стандарт</a></label></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><label><a href="#">Блог Директора</a></label></li>
+                        <li><label><a href="#">ДОТ</a></label></li>
+                    </ul>  
+                    </div>
+                </nav>
+            </div>
+
             <div class="header__nav">
                 <div class="dropdown">
                     <p class="dropdown__title">О колледже</p>
                     <ul class="dropdown__child">
                         <li><a href="#" class="dropdown__link">Миссия и видение</a></li>
                         <li><a href="#" class="dropdown__link">История</a></li>
-                        <li><a href="#" class="dropdown__link">Достижения
-                            колледжа</a></li>
-                        <li><a href="#" class="dropdown__link">Достижение
-                            преподавателей</a></li>
-                        <li><a href="#" class="dropdown__link">Достижение
-                            студентов</a></li>
+                        <li><a href="#" class="dropdown__link">Достижения колледжа</a></li>
+                        <li><a href="#" class="dropdown__link">Достижение преподавателей</a></li>
+                        <li><a href="#" class="dropdown__link">Достижение студентов</a></li>
                         <li><a href="#" class="dropdown__link">Лицензии</a></li>
                         <li><a href="#" class="dropdown__link">Гос.услуги</a></li>
                         <li><a href="#" class="dropdown__link">Контакты</a></li>
-                        <li><a href="#" class="dropdown__link">Антикоррупционный
-                            стандарт</a></li>
+                        <li><a href="#" class="dropdown__link">Антикоррупционный стандарт</a></li>
                     </ul>
                 </div>
                 <div class="dropdown">
@@ -538,6 +650,7 @@
         </p>
     </div>
     <script src="assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
 </body>
 
 </html>
