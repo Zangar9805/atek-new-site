@@ -370,26 +370,19 @@ nav .m-menu__checkbox:checked ~ .m-menu {
     max-height: 86vh;
 }
 
-.slider__item1 img{
-    background:url(../img/slide/slide1.jpg) no-repeat center center/cover;
-}
-
-.slider__item2{
-    background:url(../img/slide/slide2.jpg) no-repeat center center/cover;
-}
-
-.slider__item3{
-    background:url(../img/slide/slide3.jpg) no-repeat center center/cover;
-}
-
-.slider__item4{
-    background:url(../img/slide/slide4.jpg) no-repeat center center/cover;
+.slider__item {
+    display: flex;
+    justify-content: center; /* Центровка по горизонтали */
+    align-items: center;   /* Центровка по вертикали */
+    height: 86vh;         /* Высота блока */
+    width: 100%;
+    overflow: hidden;      /* Скрытие содержимого, выходящего за пределы */
+    resize: horizontal;    /* Позволяет изменять ширину блока */
 }
 
 #slider1 img {
-    max-width: 100%;
-    object-position: center;
-    height: auto;
+    max-width: none;       /* Убираем ограничение ширины изображения */
+    height: 100%;
 }
 
 
